@@ -40,7 +40,8 @@ module.exports = {
             },
             {
                 test: /iview\/.*?js$/,
-                loader: 'babel-loader'
+                loader: 'babel-loader',
+                exclude: /node_modules/
             },
             {
                 test: /\.js$/,
@@ -74,7 +75,8 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.vue'],
         alias: {
-            'vue': 'vue/dist/vue.esm.js'
+            'vue$': 'vue/dist/vue.esm.js',
+            '@': path.join(__dirname,'./src')
         }
     }
 };
