@@ -1,3 +1,4 @@
+
 # iView-project
 
 This project is build for Vue.js 2 + vue-router + webpack2 + iView 3, just install and run.
@@ -18,4 +19,4 @@ npm run dev
 ```bush
 npm run build
 ```
-
+this is a demo of vue using iview
